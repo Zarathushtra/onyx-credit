@@ -1063,14 +1063,16 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
 .prices.adv .gold-ic{margin-bottom:22px}
 .prices.adv h3{margin-bottom:12px}
 .prices.adv p{font-size:15px;line-height:1.6;color:var(--ink2)}
-.team.t3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
 .rel{display:flex;flex-wrap:wrap;gap:10px}
 .rel a{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:15px;transition:.25s}
 .rel a:hover{border-color:var(--ink);transform:translateY(-2px)}
 @media (max-width:1024px){.terms{grid-template-columns:1fr}.need{grid-template-columns:1fr 1fr}.team.t3{grid-template-columns:repeat(3,minmax(240px,1fr))}}
 @media (max-width:640px){.terms-r{grid-template-columns:1fr}.terms-r>div:nth-child(even){padding-left:0;border-left:0}.need{grid-template-columns:1fr}}
-.team.t3 .mem .ph{aspect-ratio:5/4}
+
 .form select{padding-right:40px;text-overflow:ellipsis}
+/* фоновые горизонтальные полосы убраны */
+.bg::after{display:none}
 
 </style>
 <script>
@@ -1619,6 +1621,7 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
   </div>
 </section>
 
+
 <!-- ============ ПАРТНЁРЫ И ЛИЦЕНЗИИ ============ -->
 <section class="sec" id="about">
   <div class="sec-h">
@@ -1676,6 +1679,7 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
       <div class="who"><div class="av">Д</div><div><b>Дмитрий Васильев</b><span>Кредит под&nbsp;залог недвижимости</span></div><span class="src">Клиент</span></div></div>
   </div>
 </section>
+
 
 <!-- ============ FAQ ============ -->
 <section class="sec" id="faq">

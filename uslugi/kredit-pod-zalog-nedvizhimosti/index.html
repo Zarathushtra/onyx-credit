@@ -1166,14 +1166,16 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
 .prices.adv .gold-ic{margin-bottom:22px}
 .prices.adv h3{margin-bottom:12px}
 .prices.adv p{font-size:15px;line-height:1.6;color:var(--ink2)}
-.team.t3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
 .rel{display:flex;flex-wrap:wrap;gap:10px}
 .rel a{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:15px;transition:.25s}
 .rel a:hover{border-color:var(--ink);transform:translateY(-2px)}
 @media (max-width:1024px){.terms{grid-template-columns:1fr}.need{grid-template-columns:1fr 1fr}.team.t3{grid-template-columns:repeat(3,minmax(240px,1fr))}}
 @media (max-width:640px){.terms-r{grid-template-columns:1fr}.terms-r>div:nth-child(even){padding-left:0;border-left:0}.need{grid-template-columns:1fr}}
-.team.t3 .mem .ph{aspect-ratio:5/4}
+
 .form select{padding-right:40px;text-overflow:ellipsis}
+/* фоновые горизонтальные полосы убраны */
+.bg::after{display:none}
 
 </style>
 <script>
@@ -1657,20 +1659,25 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
 <section class="sec" id="experts">
   <div class="sec-h">
     <div>
-      <div class="eyebrow io">Эксперты по&nbsp;залогу</div>
-      <h2 class="io">Вашу сделку <em>ведут профессионалы</em></h2>
+      <div class="eyebrow io">Наши эксперты</div>
+      <h2 class="io">Брокеры, которые <em>знают банки изнутри</em></h2>
     </div>
-    <a href="#" class="link io">Все эксперты <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a>
+    <a href="#" class="link io">О компании <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a>
   </div>
-  <div class="team t3">
+  <div class="team">
     <div class="mem io"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">НМ</span><div class="tag"><span>Руководитель</span><span>с 2014</span></div></div>
-      <h3>Монастырский Никита Яковлевич</h3><p>Генеральный директор. Сложные залоговые сделки и&nbsp;крупное финансирование</p></div>
+      <h3>Монастырский Никита Яковлевич</h3><p>Генеральный директор. Сложные залоговые сделки и&nbsp;крупное финансирование бизнеса</p></div>
     <div class="mem io" style="--d:.06s"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">КЕ</span><div class="tag"><span>Брокер</span></div></div>
       <h3>Кирсанова Елена Вадимовна</h3><p>Кредитный брокер. Ипотека и&nbsp;кредиты под&nbsp;залог недвижимости</p></div>
-    <div class="mem io" style="--d:.12s"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">КС</span><div class="tag"><span>Брокер</span></div></div>
+    <div class="mem io" style="--d:.12s"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">ЯК</span><div class="tag"><span>Брокер</span></div></div>
+      <h3>Яралиев Карим Анзорович</h3><p>Кредитный брокер. Финансирование бизнеса и&nbsp;девелоперских проектов</p></div>
+    <div class="mem io" style="--d:.18s"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">КС</span><div class="tag"><span>Брокер</span></div></div>
       <h3>Кузяков Сергей Игоревич</h3><p>Кредитный брокер. Залоговое кредитование и&nbsp;сложные кредитные истории</p></div>
+    <div class="mem io" style="--d:.24s"><div class="ph onyx"><svg class="vein" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="rotate(-28 300 360)"><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinW)" opacity=".1"/><rect x="-200" y="-200" width="1000" height="1120" filter="url(#veinG)" opacity=".15"/></g></svg><svg class="mk" viewBox="124 18 96 206" aria-hidden="true"><use href="#p1" fill="url(#hg1)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p2" fill="url(#hg2)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p3" fill="url(#hg3)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p4" fill="url(#hg4)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p5" fill="url(#hg5)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p6" fill="url(#hg6)" stroke="url(#goldEdge)" stroke-width=".6"/><use href="#p7" fill="url(#hg7)" stroke="url(#goldEdge)" stroke-width=".6"/></svg><span class="ini">ВГ</span><div class="tag"><span>Брокер</span></div></div>
+      <h3>Воропаев Глеб Сергеевич</h3><p>Кредитный брокер. Рефинансирование и&nbsp;кредиты под&nbsp;залог авто</p></div>
   </div>
 </section>
+
 
 <!-- ============ ОТЗЫВЫ ============ -->
 <section class="sec" id="reviews">
@@ -1687,16 +1694,21 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
   <div class="revs" id="revs">
     <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>С&nbsp;плохой кредитной историей банки отказывали, а&nbsp;здесь помогли получить займ под&nbsp;залог недвижимости. Отдельное спасибо менеджеру Сергею: всё объяснил и&nbsp;довёл до&nbsp;конца.</p>
       <div class="who"><div class="av">Н</div><div><b>Никита</b><span>Кредит под&nbsp;залог недвижимости</span></div><span class="src ya">Яндекс</span></div></div>
-    <div class="rev io" style="--d:.06s"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Одобрили самую большую сумму из&nbsp;всех вариантов, все задачи решены. Благодарю специалиста Сергея за&nbsp;работу.</p>
-      <div class="who"><div class="av">С</div><div><b>Серго Клим</b><span>Кредит под&nbsp;залог</span></div><span class="src ya">Яндекс</span></div></div>
-    <div class="rev io" style="--d:.12s"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Профессионально и&nbsp;оперативно. Взял кредит под&nbsp;залог недвижимости на&nbsp;ремонт и&nbsp;успел расплатиться с&nbsp;подрядчиками в&nbsp;срок.</p>
-      <div class="who"><div class="av">Д</div><div><b>Дмитрий Васильев</b><span>Кредит под&nbsp;залог недвижимости</span></div><span class="src">Клиент</span></div></div>
-    <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Ни&nbsp;один банк до&nbsp;этого не&nbsp;одобрял кредит. В&nbsp;«Ониксе» вопрос решили, деньги получила. Никаких неприятных моментов, рекомендую.</p>
+    <div class="rev io" style="--d:.06s"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Ни&nbsp;один банк до&nbsp;этого не&nbsp;одобрял кредит. В&nbsp;«Ониксе» вопрос решили, деньги получила. Никаких неприятных моментов, рекомендую.</p>
       <div class="who"><div class="av">Е</div><div><b>Елена</b><span>Потребительский кредит</span></div><span class="src ya">Яндекс</span></div></div>
+    <div class="rev io" style="--d:.12s"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Одобрили самую большую сумму из&nbsp;всех вариантов, все задачи решены. Благодарю специалиста Сергея за&nbsp;работу.</p>
+      <div class="who"><div class="av">С</div><div><b>Серго Клим</b><span>Кредит под&nbsp;залог</span></div><span class="src ya">Яндекс</span></div></div>
+    <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Очень довольна условиями кредитования и&nbsp;профессионализмом сотрудников. Всё объяснили и&nbsp;помогли оформить документы.</p>
+      <div class="who"><div class="av">О</div><div><b>Ольга Смирнова</b><span>ИП, производство мебели, Московская обл.</span></div><span class="src">Клиент</span></div></div>
+    <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Получил всю необходимую информацию и&nbsp;поддержку на&nbsp;каждом этапе оформления кредита. Очень доволен сервисом.</p>
+      <div class="who"><div class="av">И</div><div><b>Иван Петров</b><span>Тендерный кредит</span></div><span class="src">Клиент</span></div></div>
     <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Отличный сервис и&nbsp;индивидуальный подход. Благодаря помощи сотрудников смогла закрыть вопрос с&nbsp;долгами и&nbsp;приставами.</p>
       <div class="who"><div class="av">А</div><div><b>Анна Кузнецова</b><span>Руководитель, коммерческая компания</span></div><span class="src">Клиент</span></div></div>
+    <div class="rev io"><div class="rev-top"><div class="q">“</div><div class="stars" role="img" aria-label="Оценка 5 из 5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div><p>Профессионально и&nbsp;оперативно. Взял кредит под&nbsp;залог недвижимости на&nbsp;ремонт и&nbsp;успел расплатиться с&nbsp;подрядчиками в&nbsp;срок.</p>
+      <div class="who"><div class="av">Д</div><div><b>Дмитрий Васильев</b><span>Кредит под&nbsp;залог недвижимости</span></div><span class="src">Клиент</span></div></div>
   </div>
 </section>
+
 
 <!-- ============ FAQ ============ -->
 <section class="sec" id="faq">
