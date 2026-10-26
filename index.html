@@ -1027,6 +1027,12 @@ h1 em,h2 em,h3 em{font-family:"Onyx Serif Light","Playfair Display",Georgia,seri
 .hero h1 em{display:block}
 /* градиент золотого курсива не обрезает хвосты букв (р, у, д) */
 h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
+/* кнопки на карте */
+.map-acts{position:absolute;right:18px;bottom:18px;z-index:2;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.map-acts .ma{display:inline-flex;align-items:center;height:42px;padding:0 18px;border-radius:999px;font-size:13.5px;font-weight:500;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 14px 30px -16px rgba(0,0,0,.45);transition:.25s;white-space:nowrap}
+.map-acts .ma:hover{transform:translateY(-2px)}
+.map-acts .ma-dark{background:var(--ink);color:#fff}
+@media (max-width:640px){.map .pin{top:14px;bottom:auto;left:14px}.map-acts{left:14px;right:14px;bottom:14px;justify-content:stretch}.map-acts .ma{flex:1;justify-content:center;padding:0 12px}}
 
 </style>
 <script>
@@ -1713,6 +1719,10 @@ h1 em,h2 em,h3 em{padding-bottom:.2em;margin-bottom:-.2em}
       <div class="map io" style="--d:.16s">
         <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%B8%D0%B6%D0%BD%D1%8F%D1%8F%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2013%D1%811&amp;z=16" loading="lazy" title="Офис Оникс Кредит на карте" allowfullscreen></iframe>
         <div class="pin"><b>Оникс Кредит</b>Нижняя Красносельская, 13с1</div>
+        <div class="map-acts">
+          <a href="https://yandex.ru/maps/?rtext=~%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%B8%D0%B6%D0%BD%D1%8F%D1%8F%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2013%D1%811&amp;rtt=auto" target="_blank" rel="noopener" class="ma ma-dark">Как проехать</a>
+          <a href="https://yandex.ru/maps/org/oniks/153105000798/" target="_blank" rel="noopener" class="ma">Открыть в&nbsp;Яндекс Картах</a>
+        </div>
       </div>
     </div>
   </div>
